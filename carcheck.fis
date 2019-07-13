@@ -13,11 +13,11 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='last-bpad-change'
-Range=[0 48]
+Range=[0 12]
 NumMFs=3
-MF1='Recent':'trapmf',[0 4 8 9]
-MF2='ForAWhile':'trapmf',[8 10 13 14]
-MF3='WayBack':'trapmf',[13.5 15 40 48]
+MF1='Recent':'trapmf',[0 2 3 4]
+MF2='ForAWhile':'trapmf',[3 4 5 6]
+MF3='WayBack':'trapmf',[5 6 8 12]
 
 [Input2]
 Name='last-engineoil-change'
@@ -37,11 +37,11 @@ MF3='Signficant':'trapmf',[6 8 9 10]
 
 [Output1]
 Name='visit-mechanic'
-Range=[1 12]
+Range=[1 8]
 NumMFs=3
-MF1='Immediately':'trapmf',[0 1 2 4]
-MF2='Soon':'trapmf',[3 5 6 7]
-MF3='MuchLater':'trapmf',[6 8 9 10]
+MF1='Immediately':'trapmf',[0 1 2 2.5]
+MF2='Soon':'trapmf',[2.4 3 4 6]
+MF3='MuchLater':'trapmf',[5 6 7 8]
 
 [Rules]
 3 3 1, 1 (1) : 1
